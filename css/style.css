@@ -16,15 +16,15 @@ body {
   border: 2px dashed #333;
 
   /* Controle de layout geral */
-  justify-content: space-between; /* Modifique para center, space-around, etc. */
-  align-items: center; /* Modifique para flex-start, flex-end, stretch, etc. */
-  flex-direction: row; /* Modifique para column, row-reverse, etc. */
-  flex-wrap: nowrap; /* Modifique para wrap ou wrap-reverse */
+  justify-content: space-between; /* para center, space-around, etc. */
+  align-items: center; /* para flex-start, flex-end, stretch, etc. */
+  flex-direction: row; /* para column, row-reverse, etc. */
+  flex-wrap: nowrap; /* para wrap ou wrap-reverse */
 }
 
 /* Configurações gerais para os boxes */
 .box {
-  flex: 1; /* Proporção de crescimento dos boxes */
+  flex: 1; /* crescimento dos boxes */
   margin: 10px; /* Espaçamento ao redor */
   display: flex;
   justify-content: center;
