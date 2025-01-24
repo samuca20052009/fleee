@@ -1,0 +1,56 @@
+/* Centraliza o container na tela */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+/* Container que organiza os boxes */
+.container {
+  display: flex;
+  width: 80%;
+  height: 300px;
+  border: 2px dashed #333;
+
+  /* Controle de layout geral */
+  justify-content: space-between; /* Modifique para center, space-around, etc. */
+  align-items: center; /* Modifique para flex-start, flex-end, stretch, etc. */
+  flex-direction: row; /* Modifique para column, row-reverse, etc. */
+  flex-wrap: nowrap; /* Modifique para wrap ou wrap-reverse */
+}
+
+/* Configurações gerais para os boxes */
+.box {
+  flex: 1; /* Proporção de crescimento dos boxes */
+  margin: 10px; /* Espaçamento ao redor */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: white;
+  font-family: Arial, sans-serif;
+  height: 100px; /* Altura fixa */
+  transition: transform 0.3s, background-color 0.3s; /* Animação suave */
+}
+
+/* Estilo individual para cada box */
+.box1 {
+  background-color: #ff6f61;
+}
+
+.box2 {
+  background-color: #6fbf73;
+}
+
+.box3 {
+  background-color: #61a4ff;
+}
+
+/* Efeito de movimentação ao passar o mouse */
+.box:hover {
+  transform: translateY(-20px); /* Move o box para cima */
+  background-color: #000000; /* Altera a cor de fundo ao passar o mouse */
+}
